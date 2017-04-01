@@ -33,10 +33,10 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 /**
- * This class acts as a client which creates a list of Person objects, 
- * writes that list in serialized form to a .ser doc, and reads that 
- * doc back in and prints the results. The original list and the 
- * returned list should be the same.
+ * This class acts as a client which creates a list of Person objects, writes
+ * that list in serialized form to a .ser doc, and reads that doc back in and
+ * prints the results. The original list and the returned list should be the
+ * same.
  * 
  * @author Frederick Javalera
  */
@@ -46,8 +46,9 @@ public class PersonClient
 	 * Method : main
 	 *
 	 * Purpose : The main method creates an ArrayList of Persons and prints them
-	 * out. Next, it serializes the list. It then de-serializes the list and prints
-	 * the de-serialized resulting list. The two lists should be identical.
+	 * out. Next, it serializes the list. It then de-serializes the list and
+	 * prints the de-serialized resulting list. The two lists should be
+	 * identical.
 	 *
 	 * Parameters : args - An array of arguments.
 	 *
@@ -76,7 +77,7 @@ public class PersonClient
 		ArrayList<Person> newList = client.deserialize("src/m5_a2/Persons.ser");
 		System.out.println("De-serialization done...");
 		System.out.println("\n");
-		
+
 		System.out.println("Person list after reading: ");
 		for (Person p : personList)
 		{
@@ -88,10 +89,11 @@ public class PersonClient
 	/****************************************************
 	 * Method : serialize
 	 *
-	 * Purpose : The serialize method serializes pList and writes it to file, fileName.
+	 * Purpose : The serialize method serializes pList and writes it to file,
+	 * fileName.
 	 *
-	 * Parameters : pList - An arrayList of Person objects.
-	 * fileName           - The name and location of the file to be written.
+	 * Parameters : pList - An arrayList of Person objects. fileName - The name
+	 * and location of the file to be written.
 	 *
 	 * Returns : This method does not return a value.
 	 *
@@ -112,8 +114,8 @@ public class PersonClient
 	/****************************************************
 	 * Method : deserialize
 	 *
-	 * Purpose : The deserialize method reads the file located at fileName
-	 * and stores its contents in a Person ArrayList which it then returns.
+	 * Purpose : The deserialize method reads the file located at fileName and
+	 * stores its contents in a Person ArrayList which it then returns.
 	 *
 	 * Parameters : fileName - The name and location of the file to be written.
 	 *
