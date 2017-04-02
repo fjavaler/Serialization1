@@ -63,6 +63,7 @@ public class PersonClient
 		personList.add(new Person("Know Schmoe", "8018671236"));
 		personList.add(new Person("Dough Schmoe", "8018671237"));
 		personList.add(new Person("Snow Schmoe", "8018671238"));
+		personList.add(new Person("Flow Schmoe", "8018671239"));
 
 		System.out.println("Person list before writing: ");
 		for (Person p : personList)
@@ -72,9 +73,11 @@ public class PersonClient
 		System.out.println("\n");
 
 		PersonClient client = new PersonClient();
-		client.serialize(personList, "src/m5_a2/Persons.ser");
+//		client.serialize(personList, "src/m5_a2/Persons.ser");
+		client.serialize(personList, "/Users/frederickjavalera/Downloads/Persons.ser");
 		System.out.println("Serialization done...");
-		ArrayList<Person> newList = client.deserialize("src/m5_a2/Persons.ser");
+//		ArrayList<Person> newList = client.deserialize("src/m5_a2/Persons.ser");
+		ArrayList<Person> newList = client.deserialize("/Users/frederickjavalera/Downloads/Persons.ser");
 		System.out.println("De-serialization done...");
 		System.out.println("\n");
 
