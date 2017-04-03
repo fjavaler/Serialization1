@@ -27,7 +27,7 @@ import java.io.Serializable;
 
 /**
  * This class creates Person objects. A person object contains 
- * a name and a cell phone number.
+ * a name and a cell phone number. Test
  * 
  * @author Frederick Javalera
  */
