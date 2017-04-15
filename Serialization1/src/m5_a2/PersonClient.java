@@ -77,6 +77,7 @@ public class PersonClient
 		client.serialize(personList, "/Users/frederickjavalera/Downloads/Persons.ser");
 		System.out.println("Serialization done...");
 //		ArrayList<Person> newList = client.deserialize("src/m5_a2/Persons.ser");
+		@SuppressWarnings("unused")
 		ArrayList<Person> newList = client.deserialize("/Users/frederickjavalera/Downloads/Persons.ser");
 		System.out.println("De-serialization done...");
 		System.out.println("\n");
@@ -125,6 +126,7 @@ public class PersonClient
 	 * Returns : This method returns an ArrayList of Persons.
 	 *
 	 ****************************************************/
+	@SuppressWarnings("unchecked")
 	public ArrayList<Person> deserialize(String fileName)
 	{
 		ArrayList<Person> pList = new ArrayList<Person>();
